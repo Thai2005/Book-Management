@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="src/home.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-1">
+            <a href="Book Store.html" class="logo"><i class="fas fa-book"></i>Book</a>
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="Tìm Kiếm..." id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="checkout.html" class="fas fa-shopping-cart"><div class="quantity-number js-quantity-number">0</div></a>
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+        </div>
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="Book Store.html">Trang Chủ</a>
+                <a href="#featured">Giới Thiệu</a>
+                <a href="#arrivals">Thảo Luận</a>
+                <a href="#review">Diễn Đàn</a>
+                <a href="#contact">Liên Hệ</a>
+            </nav>
+        </div>
+    </header>
+    <nav class="bottom-navbar">
+        <a href="Book Store.html" class="fas fa-home"></a>
+        <a href="#featured" class="fas fa-list"></a>
+        <a href="#arrivals" class="fas fa-tag"></a>
+        <a href="#review" class="fas fa-comments"></a>
+        <a href="#contact" class="fas fa-blog"></a>
+    </nav>
+    <div class="login-form-container">
+        <div id="close-login-btn" class="fas fa-times"></div>
+        <form action="/login" method="post">
+            <h3>Đăng Nhập</h3>
+            <span>Tên Đăng Nhập</span>
+            <input type="email" class="box" name="email" placeholder="Nhập Email" required>
+            <span>Mật Khẩu</span>
+            <input type="password" class="box" name="password" placeholder="Nhập Mật Khẩu" required>
+            <div class="checkbox">
+                <input type="checkbox" name="" id-remember-me>
+                <label for="remember-me">Ghi Nhớ</label>
+            </div>
+            <input type="submit" value="Đăng Nhập" class="btn">
+            <p>Quên Mật Khẩu? <a href="#">Bấm Vào Đây</a></p>
+            <p>Chưa Tài Khoản? <a href="#" id="signup-btn">Bấm Vào Đây</a></p>
+        </form>
+    </div>
+    <div class="signup-form-container">
+        <div id="close-signup-btn" class="fas fa-times"></div>
+        <form action="/signup" method="post">
+            <h3>Đăng Ký</h3>
+            <span>Tên Đăng Nhập</span>
+            <input type="email" class="box" name="email" placeholder="Nhập Email" required>
+            <span>Mật Khẩu</span>
+            <input type="password" class="box" name="password" placeholder="Nhập Mật Khẩu" required>
+            <input type="submit" value="Đăng Ký" class="btn">
+        </form>
+    </div>
+    <section class="section">
+            <div class="book-container">
+                <h3>Trinh Thám</h3>
+                <div class="product js-book-product1"></div>
+            <div class="book-container">
+                <h3>Khoa Học Máy Tính</h3>
+                <div class="product js-book-product2"></div>
+            <div class="book-container">
+                <h3>Giả Tưởng</h3>
+                <div class="product js-book-product3"></div>
+            <div class="book-container">
+                <h3>Tình Cảm</h3>
+                <div class="product js-book-product4"></div>
+            </div>
+    </section>
+    <script type="module" src="script/displayBook.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>

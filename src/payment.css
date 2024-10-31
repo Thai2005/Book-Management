@@ -1,0 +1,137 @@
+:root{
+    --green: #27ae60;
+    --dark-color: #219150;
+    --black: #444;
+    --light-color: #666;
+    --border:.1rem solid rgba(0,0,0,.1);
+    --border-hover:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    transition: width none;
+}
+p{
+    font-size: 16px;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--black);
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    border: .5rem;
+    color: #fff;
+    background: var(--green);
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+.btn:hover{
+    background: var(--dark-color);
+}
+.header .header-1{
+    background: #fff;
+    padding: 1.5rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .header-1 .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:var(--black);
+}
+.header .header-1 .logo i{
+    color:var(--green);
+}
+.header .header-1 .icons div, .header .header-1 .icons a{
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    color:var(--black);
+    cursor: pointer;
+}
+.header .header-1 .icons div:hover, .header .header-1 .icons a:hover{
+    color:var(--green);
+}
+.book-payment{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 800px;
+    background: rgba(255, 255, 255, 0.9);
+}
+.tag{
+    font-size: 28px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+input{
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.add-info-personal{
+    display: grid;
+    width: 400px;
+}
+.qr-code-picture{
+    width: 200px;
+}
+.btn-confirm{
+    background-color: #27ae60;
+    color: #fff;
+    border: none;   
+}
+.btn-confirm:hover{
+    background-color: #219150;
+}
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    min-height: 100vh;
+    padding: 1rem;
+}
+@media (max-width: 991px) {
+    .book-payment {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .book-payment {
+        width: 90%;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .book-payment {
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+    }
+}

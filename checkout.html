@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="src/checkout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-1">
+            <a href="Book Store.html" class="logo"><i class="fas fa-book"></i>Book</a>
+            </form>
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <span class="text1">Giỏ Hàng</span>
+        <div class="main-detail">
+            <div class="product-info-book js-book-info1">
+            </div>
+            <div class="product-info-book js-book-info2">
+            </div>
+            <div class="product-info-book js-book-info3">
+            </div>
+            <div class="product-info-book js-book-info4">
+            </div>
+        </div>
+        <div class="bill-product">
+            <span class="text2">Hóa Đơn</span>
+            <div class="cost-product">
+                <p>Giá Tiền:</p>
+                <p class="js-cost-total"></p>
+            </div>
+            <div class="number-product">
+                <p>Số Lượng:</p>
+                <p class="js-number-product"></p>
+            </div>
+            <div class="cost-ship-product">
+                <p>Phí Vận Chuyển:</p>
+                <p class="js-cost-delivery-total"></p>
+            </div>
+            <div class="total-cost-product">
+                <p>Tổng:</p>
+                <p class="js-total-cost-book"></p>
+            </div>
+            <button class="payment-btn">Thanh Toán</button>
+        </div>
+    </div>
+    <div class="page-payment">
+        <div class="tag">Quét qr code để thanh toán</div>
+        <div class="book-payment">
+            <div class="add-info-personal">
+                <input placeholder="Địa chỉ" required>
+                <input placeholder="Số điện thoại" required>
+                <input placeholder="Họ tên" required>
+                <button class="btn-confirm">Xác Nhận</button>
+            </div>
+            <img src="qrcode.jfif" class="qr-code-picture">
+        </div>
+    </div>
+    <script type="module" src="script/checkout.js"></script>
+</body>
