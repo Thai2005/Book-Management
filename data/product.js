@@ -45,6 +45,19 @@ export function addToCart(productId){
             quantity: 1,
         })
     }
-    saveToStorage();
+    saveToStorage()
 }
 
+
+
+let addedMessageTimeoutId = {};
+export function addMessage(productId){
+    const addClass = document.querySelector(`.js-added-to-cart-${productId}`)
+    addClass.classList.add('js-added-to-cart1');
+    if(addedMessageTimeoutId[productId]){
+      clearTimeout(addedMessageTimeoutId[productId])
+    }
+    addedMessageTimeoutId[productId] = setTimeout(() =>{
+      addClass.classList.remove('js-added-to-cart1');
+    }, 2000)
+}

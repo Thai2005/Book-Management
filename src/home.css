@@ -329,7 +329,7 @@ html::-webkit-scrollbar-thumb{
 }
 .book-container .product .info{
     display: grid;
-    grid-template-rows: 60px 30px 1fr;
+    grid-template-rows: 55px 25px 10px 1fr;
     row-gap: 5px;
 }
 .book-container .product .book .picture img{
@@ -345,6 +345,16 @@ html::-webkit-scrollbar-thumb{
     color: red;
     font-weight: 500;
     margin-bottom: 5px;
+}
+.added-to-cart{
+    font-size: 16px;
+    color: var(--dark-color);
+    font-weight: bold;
+    opacity: 0;
+    margin-bottom: 10px;
+}
+.js-added-to-cart1{
+    opacity: 1;
 }
 .book-container .product .book .info button{
     margin-top: 3px;

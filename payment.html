@@ -25,14 +25,36 @@
     <div class="container">
         <div class="book-payment">
             <div class="add-info-personal">
-                <input placeholder="Địa chỉ" required>
-                <input placeholder="Số điện thoại" required>
-                <input placeholder="Họ tên" required>
+                <input placeholder="Địa chỉ">
+                <input placeholder="Số điện thoại">
+                <input placeholder="Họ tên">
+                <div class="payment-success">Thanh toán thành công</div>
+                <div class="payment-input">Vui lòng nhập thông tin</div>
                 <button class="btn-confirm">Xác Nhận</button>
             </div>
             <img src="qrcode.jfif" class="qr-code-picture">
+        </div>
     </div>
-    </div>
-    
+    <script>
+        document.querySelector('.btn-confirm').addEventListener('click', ()=>{
+            const inputs = document.querySelectorAll('.add-info-personal input');
+            let valid = true;
+            inputs.forEach((input) => {
+                if(input.value === ''){
+                    valid = false;
+                    document.querySelector('.payment-input').classList.add('js-payment-input');
+                    setTimeout(() => {
+                        document.querySelector('.payment-input').classList.remove('js-payment-input');
+                    }, 2000);
+                }
+            })
+            if(valid){
+                document.querySelector('.payment-success').classList.add('js-payment-success');
+                setTimeout(() => {
+                    document.querySelector('.payment-success').classList.remove('js-payment-success');
+                }, 2000);
+            }
+        })
+    </script>
 </body>
 </html>

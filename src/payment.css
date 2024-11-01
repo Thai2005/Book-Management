@@ -102,10 +102,13 @@ input{
 .btn-confirm{
     background-color: #27ae60;
     color: #fff;
-    border: none;   
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 .btn-confirm:hover{
     background-color: #219150;
+
 }
 .container {
     display: flex;
@@ -114,6 +117,20 @@ input{
     height: 100vh; 
     min-height: 100vh;
     padding: 1rem;
+}
+.payment-success{
+    font-size: 16px;
+    opacity: 0;
+}
+.payment-input{
+    font-size: 16px;
+    opacity: 0;
+}
+.js-payment-success{
+    opacity: 1;
+}
+.js-payment-input{
+    opacity: 1;
 }
 @media (max-width: 991px) {
     .book-payment {

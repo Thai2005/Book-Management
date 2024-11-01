@@ -1,4 +1,4 @@
-import {displayQuantity, addToCart} from '../data/product.js';
+import {displayQuantity, addToCart, addMessage} from '../data/product.js';
 import {bookProduct1, bookProduct2, bookProduct3, bookProduct4} from '../data/bookProduct.js';
 
 
@@ -13,6 +13,7 @@ function displayProduct(productContainer){
                 <div class="info"> 
                     <p class="book-name">${product.name}</p>
                     <p class="book-price">${(product.price/1000).toFixed(3)}VND</p>
+                    <div class="added-to-cart js-added-to-cart-${product.id}">Đã thêm vào giỏ</div>
                     <button class="addToCart-btn js-add-to-cart" data-product-id=${product.id}>Thêm Vào Giỏ</button>
                 </div>
             </div>
@@ -31,6 +32,7 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
     button.addEventListener('click', () => {
         const productId = button.dataset.productId;
         addToCart(productId);
+        addMessage(productId);
         displayQuantity();
     });
 });

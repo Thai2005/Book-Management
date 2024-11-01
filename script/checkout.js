@@ -91,7 +91,7 @@ function calculateBill(bookProducts) {
             if (deliveryOption) {
                 shippingCost += deliveryOption.value === '1' ? 10000 : 20000;
             }
-        }
+        }   
     });
 
     document.querySelector('.js-cost-total').textContent = `${(totalPrice / 1000).toFixed(3)} VND`;
