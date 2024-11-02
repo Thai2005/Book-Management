@@ -226,7 +226,7 @@ export const bookProduct4 = [{
     id:'408a',
     image:'books4/9.jpg',
     name:'Trên Sa Mạc Và Trong Rừng Thẳm',
-    price:78.700
+    price:78700
 },{
     id:'409a',
     image:'books4/10.jpg',

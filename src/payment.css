@@ -143,6 +143,11 @@ input{
         width: 90%;
         padding: 1rem;
     }
+    .qr-code-picture{
+        position: absolute;
+        top: 100px;
+        left: 100px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -150,5 +155,10 @@ input{
         flex-direction: column;
         width: 100%;
         padding: 1rem;
+    }
+    .qr-code-picture{
+        position: absolute;
+        top: 100px;
+        left: 100px;
     }
 }
